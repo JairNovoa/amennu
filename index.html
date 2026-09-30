@@ -68,11 +68,11 @@
 <script>
 const DURACION = 10000;
 const SLIDES = [
-  { src: "imagenes/diego.jpg",  texto: "Mensaje de Román" },
-  { src: "imagenes/edwin.jpg",  texto: "¡Que los cumplas muy feliz Amennu ❤️" },
-  { src: "imagenes/jair.jpg",   texto: "Te amo madre" },
-  { src: "imagenes/george.jpg", texto: "Mis mejores deseos para la mujer más hermosa!!!\nFelicidades mi Amennu!!!" },
-  { src: "imagenes/todos.jpg",  texto: "¡Felicidades Amennu!", final: true }
+  { src: "diego.jpg",  texto: "¡Feliz cumpleaños Amennu, te quiero mucho!" },
+  { src: "edwin.jpg",  texto: "¡Que los cumplas muy feliz Amennu!\n❤️" },
+  { src: "jair.jpg",   texto: "¡Te amo madre!" },
+  { src: "george.jpg", texto: "¡Mis mejores deseos para la mujer más hermosa!\n¡Felicidades mi Amennu!" },
+  { src: "todos.jpg",  texto: "¡Muchas felicidades Amennu!", final: true }
 ];
 
 /* ---------- Construcción de las diapositivas ---------- */
@@ -180,7 +180,7 @@ const listas = Promise.race([
 ]);
 
 /* ---------- Música: Las Mañanitas ---------- */
-const musica = new Audio('audio/mananitas.mp3');
+const musica = new Audio('mananitas.mp3');
 musica.loop = true; musica.preload = 'auto'; musica.volume = 0;
 const bSonido = document.getElementById('sonido');
 musica.addEventListener('error', () => { bSonido.style.display = 'none'; });   // sin archivo: sigue en silencio
